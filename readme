@@ -1,4 +1,4 @@
-# MasternodeSetup
+<h1> #MasternodeSetup</h1>
 
 ### Required:
 
@@ -9,11 +9,11 @@
 
 3. You will need also VPS with Ubuntu 16.04 or 18.04 or 20.04
 
-**VPS WALLET:**
+<h2> **VPS WALLET:** </h2>
 
 To install mnsc Masternode use the following command:
 
-`bash <( curl -sL https://raw.githubusercontent.com/locololo123/Setup-wallets/masternode-install.sh)
+bash <( curl -sL https://raw.githubusercontent.com/locololo123/Setup-wallets/masternode-install.sh)
 
 - Enjoy
 
