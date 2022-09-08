@@ -10,7 +10,7 @@ COIN_PATH='/usr/local/bin/'
 OS_VERSION=$(lsb_release -d)
 COIN_TGZP='https://github.com/MnSavings/MNSavings/releases/download/v1000/mnsc-linux-v1000.zip'
 https://github.com/MnSavings/MNSavings/releases/download/v1000/mnsc-linux-v1000.zip
-COIN_BOOTSTRAP='https://github.com/MnSavings/MNSavings/releases/download/v1000/bootstrap.zip'
+COIN_BOOTSTRAP='https://github.com/locololo123/blocks/releases/download/bootstrap_cryptos2/blocksMNS-080922.zip'
 COIN_BOOTSTRAP_NAME=$(echo $COIN_BOOTSTRAP | awk -F'/' '{print $NF}')
 COIN_TGZ=$(echo $COIN_TGZP | awk -F'/' '{print $NF}')
 COIN_NAME='mnsavings'
@@ -253,10 +253,31 @@ function update_config() {
   sed -i 's/daemon=1/daemon=0/' $CONFIGFOLDER/$CONFIG_FILE
   cat << EOF >> $CONFIGFOLDER/$CONFIG_FILE
 maxconnections=256
-bind=$NODEIP
+bind=$NODEIP:$COIN_PORT
+externalip=$NODEIP
 masternode=1
 masternodeaddr=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
+
+addnode=140.82.59.122:5727
+addnode=[2a02:c207:2027:9688:3a07::11]:5727
+addnode=51.195.217.69:5727
+addnode=70.34.215.120:5727
+addnode=207.148.81.208:5727
+addnode=213.239.204.116:5727
+addnode=[2a01:4f9:4b:144f::33]:5727
+addnode=216.27.7.129:5727
+addnode=51.79.55.62:5727
+addnode=149.28.54.19:5727
+addnode=23.95.115.7:5727
+addnode=45.63.40.168:5727
+addnode=62.171.173.111:5727
+addnode=138.68.173.91:5727
+addnode=[2a03:b0c0:3:d0::1335:e008]:5727
+addnode=185.163.127.105:5727
+
+
+
 EOF
 }
 
