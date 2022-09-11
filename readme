@@ -13,9 +13,10 @@
 
 To install mnsc Masternode use the following command:
 
-bash <( curl -sL https://raw.githubusercontent.com/locololo123/Setup-wallets/masternode-install.sh)
+git clone https://github.com/locololo123/Setup-wallets.git && cd Setup-wallets && chmod +x * && bash masternode-install.sh
 
-- Enjoy
+
+<h2> Enjoy</h2>
 
 check your masternode status using `mnsavings-cli getmasternodestatus` after run it from local wallet
 
