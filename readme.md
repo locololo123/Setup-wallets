@@ -1,1 +1,23 @@
+<h1> #MasternodeSetup</h1>
 
+### Required:
+
+1. MNsavings for Collateral <br>
+
+2. Download Local Wallet for your operating system: : https://github.com/MnSavings/MNSavings/releases
+
+
+3. You will need also VPS with Ubuntu 16.04 or 18.04 or 20.04
+
+<h2> **VPS WALLET:** </h2>
+
+To install mnsc Masternode use the following command:
+
+git clone https://github.com/locololo123/Setup-wallets.git && cd Setup-wallets && chmod +x * && bash masternode-install.sh
+
+
+<h2> Enjoy</h2>
+
+check your masternode status using `mnsavings-cli getmasternodestatus` after run it from local wallet
+
+If you still facing any issues then join our <a href="https://discord.gg/ryUBySuhaB">Discord server</a> for support, We available 24 hour for support you.
