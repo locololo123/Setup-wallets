@@ -10,7 +10,7 @@ COIN_PATH='/usr/local/bin/'
 OS_VERSION=$(lsb_release -d)
 COIN_TGZP='https://github.com/MnSavings/MNSavings/releases/download/v1000/mnsc-linux-v1000.zip'
 https://github.com/MnSavings/MNSavings/releases/download/v1000/mnsc-linux-v1000.zip
-COIN_BOOTSTRAP='https://github.com/locololo123/blocks/releases/download/bootstrap_cryptos2/blocksMNS-080922.zip'
+COIN_BOOTSTRAP='https://github.com/locololo123/blocks/releases/download/bootstrap_cryptos3/blocksMNS-150922.zip'
 COIN_BOOTSTRAP_NAME=$(echo $COIN_BOOTSTRAP | awk -F'/' '{print $NF}')
 COIN_TGZ=$(echo $COIN_TGZP | awk -F'/' '{print $NF}')
 COIN_NAME='mnsavings'
