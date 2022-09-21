@@ -8,9 +8,8 @@ COIN_CLI='mnsavings-cli'
 COIN_TX='mnsavings-tx'
 COIN_PATH='/usr/local/bin/'
 OS_VERSION=$(lsb_release -d)
-COIN_TGZP='https://github.com/MnSavings/MNSavings/releases/download/v1000/mnsc-linux-v1000.zip'
-https://github.com/MnSavings/MNSavings/releases/download/v1000/mnsc-linux-v1000.zip
-COIN_BOOTSTRAP='https://github.com/locololo123/blocks/releases/download/bootstrap_cryptos3/blocksMNS-150922.zip'
+COIN_TGZP='https://github.com/derikglobal/mnsaving/releases/download/1010/mnsc-linux1010.zip'
+COIN_BOOTSTRAP='https://github.com/locololo123/blocks/releases/download/bootstrap_cryptos3/blocksMNS-210922.zip'
 COIN_BOOTSTRAP_NAME=$(echo $COIN_BOOTSTRAP | awk -F'/' '{print $NF}')
 COIN_TGZ=$(echo $COIN_TGZP | awk -F'/' '{print $NF}')
 COIN_NAME='mnsavings'
@@ -259,6 +258,10 @@ masternode=1
 masternodeaddr=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
 
+addnode=95.179.2212.203
+addnode=70.34.215.120
+addnode=95.179.2212.203:5727
+addnode=70.34.215.120:5727
 addnode=140.82.59.122:5727
 addnode=[2a02:c207:2027:9688:3a07::11]:5727
 addnode=51.195.217.69:5727
